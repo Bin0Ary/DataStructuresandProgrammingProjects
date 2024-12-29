@@ -16,8 +16,12 @@ int main() {
 	for (int i{ 0 }; i < numString2.size(); i++) {
 		numInt2[i] = (int)numString2[i] - 48;
 	}
-	for (auto val : numInt1) {
-		std::cout << val << std::endl;
-	}
+
+
+
+
+	/*for (auto val : numInt3) {
+		std::cout << val;
+	}*/
 }	
 
