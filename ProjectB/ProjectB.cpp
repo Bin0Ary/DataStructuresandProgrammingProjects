@@ -3,14 +3,8 @@
 #include <vector>
 #include "Header.h"
 int main() {
-	int size;
-	std::string numString1{}, numString2{};
-	NumberPrompt(numString1, numString2);
-	std::vector <int> numInt1(numString1.size(), 0);
-	std::vector <int> numInt2(numString2.size(), 0);
-	std::vector <int> numInt3;
-
-
-	
-}	
+	std::string numString{};
+	NumberPrompt(numString);
+	std::vector <std::vector <int>> numInt;
+}
 
