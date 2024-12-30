@@ -365,3 +365,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /ProjectB/ProjectB.vcxproj.filters
 /ProjectBSln.wsp
+/ProjectA/ProjectA.vcxproj.filters
