@@ -6,5 +6,7 @@ int main() {
 	std::string numString{};
 	NumberPrompt(numString);
 	std::vector <std::vector <int>> numInt;
+	CleanString(numString);
+	FillVector(numInt, numString);
 }
 

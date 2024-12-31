@@ -24,14 +24,23 @@ void CleanString(std::string &s) {
 		}
 	}
 }
-// WIP
+//Fills a 2d vector with the values inside the string
+//by creating a temporary vector and using pushback to
+//fill the temp vector and then pushes the temporary
+//vector into the input vector creating a row
 void FillVector(std::vector <std::vector<int>> &v, const std::string &s) {
-	int i{ 0 };
-		for (size_t j{ 0 }; j < s.size(); j++) {
-			if (s[j] == '\0') {
-				i == 1;
+	size_t pos{0};
+	for (size_t i{ 0 }; i < 2; i++) {
+		std::vector <int> temp;
+		for (size_t j{pos}; j < s.size(); j++) {
+			if (s[j] == ' ') {
+				pos = (j + 1);
+				break;
 			}
+			else{temp.push_back(s[j] - 48); }
 		}
+		v.push_back(temp);
+	}
 	
 }
 
