@@ -2,7 +2,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
-
+#include <deque>
+#include <algorithm>
 // Prompts the user for number inputs
 void NumberPrompt(std::string &a) {
 	std::cout << "Enter both numbers with one space between them: ";
@@ -28,10 +29,10 @@ void CleanString(std::string &s) {
 //by creating a temporary vector and using pushback to
 //fill the temp vector and then pushes the temporary
 //vector into the input vector creating a row
-void FillVector(std::vector <std::vector<int>> &v, const std::string &s) {
+void FillVector(std::deque <std::deque<int>> &d, const std::string &s) {
 	size_t pos{0};
 	for (size_t i{ 0 }; i < 2; i++) {
-		std::vector <int> temp;
+		std::deque <int> temp;
 		for (size_t j{pos}; j < s.size(); j++) {
 			if (s[j] == ' ') {
 				pos = (j + 1);
@@ -39,9 +40,14 @@ void FillVector(std::vector <std::vector<int>> &v, const std::string &s) {
 			}
 			else{temp.push_back(s[j] - 48); }
 		}
-		v.push_back(temp);
+		d.push_back(temp);
 	}
 	
 }
+// TODO
+void Multiplication(std::deque<std::deque <int>>& d) {
+	std::deque<std::deque<int>>::iterator row;
+	std::deque<int>::iterator col;
 
-// TODO: Add the multiplication step
+}
+
