@@ -45,9 +45,14 @@ void FillVector(std::deque <std::deque<int>> &d, const std::string &s) {
 	
 }
 // TODO
-void Multiplication(std::deque<std::deque <int>>& d) {
+void Multiplication(std::deque<std::deque <int>>& d, std::deque<std::deque<int>> &da) {
 	std::deque<std::deque<int>>::iterator row;
 	std::deque<int>::iterator col;
-
+	for (row = d.rbegin(); row != d.rend(); ++row) {
+		std::deque <int> temp;
+		for (col = row->begin(); col != row->end(); ++col) {
+			
+		}
+	}
 }
 

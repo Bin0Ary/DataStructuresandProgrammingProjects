@@ -4,12 +4,12 @@
 #include <deque>
 #include "Header.h"
 int main() {
-	std::deque <std::deque<int>> l{ {123},{245444} };
-	std::cout << l.size();
-	/*std::string numString{};
-	NumberPrompt(numString);
+	std::string numString{};
 	std::deque <std::deque <int>> numInt;
+	std::deque <std::deque <int>> resultInt;
+	NumberPrompt(numString);
 	CleanString(numString);
-	FillVector(numInt, numString);*/
+	FillVector(numInt, numString);
+	Multiplication(numInt, resultInt);
 }
 
